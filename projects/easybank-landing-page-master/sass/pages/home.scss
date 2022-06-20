@@ -1,0 +1,97 @@
+.home{
+    width: 100%;
+    min-height:100vh;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    position: relative;
+    
+
+       .container{
+             width: $containerWidth;
+             min-height: 100vh;
+             display: flex;
+             justify-content: space-between;
+             align-items:center;
+
+             @media(#{$mobileMedis}){
+                  justify-content: space-between;
+                  flex-direction: column;
+             }
+
+
+
+               .images{
+                     .bg{
+                       position: absolute;
+                       right: -250px;
+                       top: 0;
+                        width:1000px;
+                        height:100%;
+
+                        @media(#{$mobileMedis}){
+                             width: 1000px;
+                             right: 50%;
+                             transform: translateX(50%);
+                             height: 400px;
+
+
+                        }
+                     }
+
+                     .mobiles{
+                         position: absolute;
+                         right: 0;
+                         top:0;
+                         width: 47%;
+                         height:100%;
+                         @media(#{$mobileMedis}){
+                           right: 50%;
+                           top:-30px;
+                           width: 47%;
+                           height:450px;
+                           transform: translateX(50%);
+                         }
+                     }
+               }
+
+
+               .content{
+                   width: 40%;
+
+                   @media(#{$mobileMedis}){
+                        width: 100%;
+                        margin-top: 40px;
+                        margin-top:400px;
+
+                   }
+
+                         h1{
+                            font-size:3rem;
+                            font-weight:300;
+                            text-transform: capitalize;
+
+                            @media(#{$mobileMedis}){
+                                 font-size:2.3rem;
+                                 margin-top:20px;
+                            }
+
+
+                         }
+
+
+                         p{
+                             color: $grayColor;
+                             margin-top:30px;
+
+                               @media(#{$mobileMedis}){
+                                    margin-top: 10px;
+                               }
+                         }
+
+                         button{
+                            margin-top: 30px;
+                         }
+
+               }
+       }
+}

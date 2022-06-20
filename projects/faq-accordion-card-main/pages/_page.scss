@@ -1,0 +1,160 @@
+.page{
+    position: relative;
+    width:100%;
+    min-height: 100vh;
+    overflow: hidden;
+
+}
+
+// scroll bar
+
+
+
+
+
+
+.container{
+      width: 100%;
+      min-height: 100vh;
+      background-color: $blueColor;
+
+
+      @include centerChildByflex;
+
+         .card{
+              width:900px;
+              height:500px;
+              background-color:white;
+              border-radius: 20px;
+              position: relative;
+              padding-right: 30px;
+              overflow: hidden;
+              padding:30px;
+
+
+                            @include betweenChildByflex;
+
+                            @media(#{$mobilemedia}){
+                                width:350px;
+                                min-height:600px;
+                                flex-wrap: wrap;
+                                padding-right: 10px;
+
+                            }
+
+
+                            .images{
+
+                                    @media(#{$mobilemedia}){
+                                        width: 100%;
+
+
+                                    }
+                                   width:45%;
+                                   .box{
+                                        position: absolute;
+                                        left: -80px;
+                                        top:-20%;
+                                        transform: translate(0,-50%);
+
+                                         animation: box 2s 0.5s 1 ease forwards;
+
+
+
+
+
+
+
+                                   }
+
+
+                                   .woman{
+                                        width: 450px;
+
+                                        @media(#{$mobilemedia}){
+                                              width: 100%;
+
+                                        }
+
+                                   }
+
+                            }
+
+
+
+                            .content{
+                                width: 45%;
+                                height:100%;
+                                margin-top: 40px;
+                                margin-bottom: 40px;
+                                position: relative;
+                                padding:10px;
+                                overflow: auto;
+
+
+                                  h1{
+                                      text-align: center;
+                                      @media(#{$mobilemedia}){
+                                           margin:25px;
+                                      }
+                                  }
+
+                                      @media(#{$mobilemedia}){
+                                          width: 100%;
+                                      }
+
+                                      .questions{
+
+
+
+                                             .qestion{
+                                                 border-bottom: 1px solid black;
+                                                 padding:20px 0;
+                                                 
+                                                   .q{
+                                                       display: flex;
+                                                       justify-content: space-between;
+
+                                                            h2{
+                                                               font-size:2rem;
+                                                               font-weight:bold;
+
+                                                               @media(#{$mobilemedia}){
+                                                                  fot-size:1.5rem;
+                                                               }
+                                                            }
+                                                            button{
+                                                                color:white;
+                                                                margin-right: 30px;
+                                                                cursor: pointer;
+                                                                padding:10px 20px;
+                                                                border-radius: 5px;
+                                                                background-color: $blueColor;
+
+
+                                                                &:hover{
+                                                                    background-color: #f0f0f0;
+                                                                    color:$blueColor;
+                                                                    border:2px solid $blueColor;
+                                                                }
+                                                                @media(#{$mobilemedia}){
+                                                                    font-size:0.9rem;
+                                                                    padding:2px 10px;
+                                                                }
+
+                                                            }
+                                                   }
+                                                   p{
+                                                     color:red;
+                                                     margin-top: 20px;
+                                                     color:$grayColor;
+
+                                                   }
+                                             }
+                                      }
+
+                            }
+
+
+         }
+}

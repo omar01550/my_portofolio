@@ -1,0 +1,78 @@
+.about{
+   width: 100%;
+   min-height: 100vh;
+
+        .container{
+             width: $containerWidth;
+             min-height: 150vh;
+             padding-top: 30px;
+             padding-bottom: 30px;
+
+             @media(#{$mobileMedis}){
+                  min-height: 100vh;
+
+             }
+
+             @media(#{$xsmallMedia}){
+                  min-height: 300vh;
+                  
+
+             }
+
+              .question{
+                  h2{
+                    margin-top: 40px;
+                     font-size:2.3rem;
+                     font-weight:300;
+                     text-transform: capitalize;
+
+                  }
+
+
+                  p{
+
+                     color:$grayColor;
+
+                  }
+              }
+
+              .cards{
+                    margin-top:20px;
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    position: relative;
+                   .card{
+
+                         width: 250px;
+                         min-height:300px;
+                         background-color: #f0f0f0;
+                         border-radius: 10px;
+                         margin-top: 40px;
+                         padding:25px;
+
+
+
+                         img{
+
+                         }
+
+
+                         h3{
+                             text-transform: capitalize;
+                         }
+
+                         p{
+                                color:$grayColor;
+                                font-size:0.9rem;
+
+                         }
+
+
+                   }
+              }
+        }
+
+
+}

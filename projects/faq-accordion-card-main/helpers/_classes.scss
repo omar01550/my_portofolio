@@ -1,0 +1,16 @@
+.hidden{
+    display: none;
+}
+
+//setting div
+.show{
+    right: 50%;
+}
+
+
+@keyframes box{
+    0%{top:-30%}
+    30%{top:50%;}
+    50%{top:30%}
+    100%{top:62%}
+}

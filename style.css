@@ -46,7 +46,7 @@ a{
 body{
    background-color: var(--color-primary);
    font-size: 1.1em;
-   font-family: Poppins;
+   font-family: cairo;
    position: relative;
    width: 100%;
    height: 100%;
@@ -665,7 +665,7 @@ width: 100%;
      width: 100%;
      position: fixed;
      right:2%;
-     top:94%;
+     top:95%;
      left: 0;
      bottom:0;
      padding:0px;
@@ -684,6 +684,9 @@ width: 100%;
 
 
    /*home*/
+   .header{
+
+   }
    .header-content{
       width: 100%;
       min-height: 100vh;
